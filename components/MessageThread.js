@@ -8,6 +8,7 @@ import {
   Dimensions,
   ImageBackground,
   Button,
+  TextInput,
 } from "react-native";
 import MessageBubble from "./MessageBubble";
 
@@ -22,6 +23,7 @@ export default function MessageThread({ route, navigation }) {
         {message.messages.map((message) => (
           <MessageBubble key={message.id} message={message} />
         ))}
+        <TextInput />
       </View>
     </View>
   );

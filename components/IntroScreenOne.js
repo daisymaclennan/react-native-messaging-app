@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
-    position: "fixed",
+    position: "absolute",
     top: 0,
     left: 0,
   },
