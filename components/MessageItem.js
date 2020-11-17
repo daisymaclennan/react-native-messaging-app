@@ -16,7 +16,6 @@ const MessageItem = ({ navigation, message }) => {
       style={{
         width: "100%",
         backgroundColor: "#fff",
-        marginTop: "8px",
       }}
     >
       <Pressable
@@ -24,9 +23,9 @@ const MessageItem = ({ navigation, message }) => {
           navigation.navigate("MessageThread", { message: message })
         }
         style={{
-          borderBottomColor: "#363A44",
-          borderBottomWidth: "1px",
-          padding: "10px",
+          borderBottomColor: "rgba(0, 0, 0, 0.65)",
+          borderBottomWidth: 1,
+          padding: 10,
           display: "flex",
           flexDirection: "row",
         }}
@@ -34,16 +33,16 @@ const MessageItem = ({ navigation, message }) => {
         <View
           style={{
             backgroundColor: "#363A44",
-            height: "40px",
-            width: "40px",
-            borderRadius: "20px",
+            height: 40,
+            width: 40,
+            borderRadius: 20,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            marginRight: "16px",
+            marginRight: 16,
           }}
         >
-          <Text style={{ fontSize: "22px", lineHeight: "22px", color: "#fff" }}>
+          <Text style={{ fontSize: 22, lineHeight: 22, color: "#fff" }}>
             {message.senderFriendly.substring(0, 1)}
           </Text>
         </View>
@@ -57,16 +56,16 @@ const MessageItem = ({ navigation, message }) => {
           >
             <Text
               style={{
-                fontSize: "15px",
-                lineHeight: "20px",
+                fontSize: 15,
+                lineHeight: 20,
               }}
             >
               {message.senderFriendly}
             </Text>
             <Text
               style={{
-                fontSize: "10px",
-                lineHeight: "20px",
+                fontSize: 10,
+                lineHeight: 20,
                 color: "rgba(0, 0, 0, 0.5)",
               }}
             >
@@ -75,8 +74,8 @@ const MessageItem = ({ navigation, message }) => {
           </View>
           <Text
             style={{
-              fontSize: "12px",
-              lineHeight: "20px",
+              fontSize: 12,
+              lineHeight: 20,
               color: "rgba(0, 0, 0, 0.65)",
             }}
           >

@@ -120,6 +120,13 @@ const messages = [
         senderMe: false,
       },
       {
+        id: 5,
+        timeSent: "11:11 AM",
+        content:
+          "Hey, What’s up? I am alright. What about you? Yeah, sure! We can seat together. Give me 10 mins.",
+        senderMe: false,
+      },
+      {
         id: 2,
         timeSent: "11:11 AM",
         content:

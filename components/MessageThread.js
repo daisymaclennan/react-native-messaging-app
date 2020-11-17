@@ -13,18 +13,31 @@ import {
 import MessageBubble from "./MessageBubble";
 
 export default function MessageThread({ route, navigation }) {
+  const [value, onChangeText] = React.useState("Write a message here");
   const { message } = route.params;
   const win = Dimensions.get("window");
   const containerWidth = win.width - 32;
   console.log(message);
   return (
     <View style={styles.container}>
-      <View style={{ width: containerWidth }}>
+      <View style={{ width: containerWidth, marginBottom: 100 }}>
         {message.messages.map((message) => (
           <MessageBubble key={message.id} message={message} />
         ))}
-        <TextInput />
       </View>
+      <TextInput
+        style={{
+          backgroundColor: "#fff",
+          width: "100%",
+          color: "rgba(0, 0, 0, 0.87)",
+          paddingVertical: 24,
+          paddingHorizontal: 32,
+          position: "absolute",
+          bottom: 0,
+        }}
+        onChangeText={(text) => onChangeText(text)}
+        value={value}
+      />
     </View>
   );
 }
@@ -34,6 +47,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F5F5F5",
     alignItems: "center",
-    marginTop: "20px",
+    justifyContent: "flex-end",
+    marginTop: 20,
   },
 });

@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import messages from "../static/data/messages.js";
+import messagesObj from "../static/data/messages.js";
 import MessageItem from "./MessageItem";
 import {
   StyleSheet,
@@ -14,6 +14,7 @@ import {
 } from "react-native";
 
 export default function IntroScreenOne({ navigation }) {
+  const [messages, setMessages] = React.useState(messagesObj);
   const win = Dimensions.get("window");
   const containerWidth = win.width - 32;
   console.log(messages);
@@ -24,7 +25,7 @@ export default function IntroScreenOne({ navigation }) {
           width: containerWidth,
         }}
       >
-        <Text>All messages</Text>
+        <Text style={{ marginBottom: 8 }}>All messages</Text>
 
         {messages.map((message) => (
           <MessageItem
@@ -43,6 +44,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F5F5F5",
     alignItems: "center",
-    marginTop: "20px",
+    marginTop: 20,
   },
 });

@@ -34,7 +34,7 @@ export default function IntroScreenOne({ navigation }) {
             resizeMode: "contain",
             position: "absolute",
             bottom: 0,
-            marginLeft: "40px",
+            marginLeft: 40,
           }}
           source={require("../static/img/graphic-design-img.svg")}
         />
@@ -43,13 +43,13 @@ export default function IntroScreenOne({ navigation }) {
         style={{
           width: containerWidth,
           textAlign: "center",
-          marginTop: "50px",
+          marginTop: 50,
           flexBasis: "40%",
         }}
       >
         <View
           style={{
-            marginBottom: "18px",
+            marginBottom: 18,
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -58,18 +58,18 @@ export default function IntroScreenOne({ navigation }) {
         >
           <Image
             style={{
-              width: "35px",
-              height: "35px",
-              marginRight: "8px",
+              width: 35,
+              height: 35,
+              marginRight: 8,
             }}
             source={require("../static/img/message-icon.svg")}
           />
           <Text
             style={{
               color: "#fff",
-              fontSize: "30px",
-              fontWeight: "300",
-              lineHeight: "35px",
+              fontSize: 30,
+              fontWeight: 300,
+              lineHeight: 35,
             }}
           >
             Message here
@@ -79,8 +79,8 @@ export default function IntroScreenOne({ navigation }) {
         <Text
           style={{
             color: "#fff",
-            fontSize: "14px",
-            lineHeight: "20px",
+            fontSize: 14,
+            lineHeight: 20,
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit vivamus
@@ -92,7 +92,7 @@ export default function IntroScreenOne({ navigation }) {
             width: containerWidth,
             justifyContent: "space-between",
             marginTop: "auto",
-            marginBottom: "60px",
+            marginBottom: 60,
           }}
         >
           <View />
@@ -104,8 +104,8 @@ export default function IntroScreenOne({ navigation }) {
             style={{
               backgroundColor: "rgba(0, 0, 0, 0)",
               fontWeight: 500,
-              fontSize: "14px",
-              lineHeight: "20px",
+              fontSize: 14,
+              lineHeight: 20,
             }}
           />
         </View>
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
-    position: "absolute",
+    position: "fixed",
     top: 0,
     left: 0,
   },
